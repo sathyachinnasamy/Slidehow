@@ -142,6 +142,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C2C6C101E1A028500DB4A54 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C18097F1E13E98000F88268 /* Reachability.h */,
+				5C1809801E13E98000F88268 /* Reachability.m */,
+				5C6B32EA1E125A62000A75EB /* ViewController.h */,
+				5C6B32EB1E125A62000A75EB /* ViewController.m */,
+				5C14475F1E169CBD0021A755 /* ImageCollectionCell.h */,
+				5C1447601E169CBD0021A755 /* ImageCollectionCell.m */,
+				5C1809821E13F50D00F88268 /* Dashboard.h */,
+				5C1809831E13F50E00F88268 /* Dashboard.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		5C457A0A1E17A7B4008C20A2 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,17 +209,10 @@
 			isa = PBXGroup;
 			children = (
 				5C457A0A1E17A7B4008C20A2 /* Icons */,
-				5C18097F1E13E98000F88268 /* Reachability.h */,
-				5C1809801E13E98000F88268 /* Reachability.m */,
+				5C2C6C101E1A028500DB4A54 /* Controllers */,
 				5C6B32E71E125A62000A75EB /* AppDelegate.h */,
 				5C6B32E81E125A62000A75EB /* AppDelegate.m */,
-				5C6B32EA1E125A62000A75EB /* ViewController.h */,
-				5C6B32EB1E125A62000A75EB /* ViewController.m */,
 				5C6B32ED1E125A62000A75EB /* Main.storyboard */,
-				5C14475F1E169CBD0021A755 /* ImageCollectionCell.h */,
-				5C1447601E169CBD0021A755 /* ImageCollectionCell.m */,
-				5C1809821E13F50D00F88268 /* Dashboard.h */,
-				5C1809831E13F50E00F88268 /* Dashboard.m */,
 				5C6B32F31E125A63000A75EB /* Assets.xcassets */,
 				5C6B32F51E125A63000A75EB /* LaunchScreen.storyboard */,
 				5C6B32F81E125A63000A75EB /* Info.plist */,

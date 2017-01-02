@@ -149,23 +149,14 @@
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIAlertController * alert = [UIAlertController
-                                 alertControllerWithTitle:@"Name of the selected Image"
-                                 message:[titleNameArr objectAtIndex:indexPath.row]
-                                 preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertAction* yesButton = [UIAlertAction
-                                actionWithTitle:@"Ok"
-                                style:UIAlertActionStyleDefault
-                                handler:^(UIAlertAction * action) {
-                                    [self.navigationController popViewControllerAnimated:YES];
-                                }];
-    
-    
-    [alert addAction:yesButton];
-    
-    [self presentViewController:alert animated:YES completion:nil];
-    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Name of the selected Image"message:[titleNameArr objectAtIndex:indexPath.row]
+        preferredStyle:UIAlertControllerStyleAlert];
+    //We add buttons to the alert controller by creating UIAlertActions:
+    UIAlertAction *actionOk = [UIAlertAction actionWithTitle:@"OK"
+     style:UIAlertActionStyleDefault handler:nil];
+    [alertController addAction:actionOk];
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 #pragma mark COLOR CODE

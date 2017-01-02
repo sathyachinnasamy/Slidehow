@@ -145,6 +145,7 @@
 }
 - (IBAction)reset:(id)sender {
     //Refresh the view
-    [self viewDidLoad];
+    self.loginId.text =@"";
+    self.password.text =@"";
 }
 @end
